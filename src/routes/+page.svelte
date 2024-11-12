@@ -1,24 +1,31 @@
 <script lang="ts">
-  import Selection from "../components/selection.svelte";
+  import Empty from "../components/sections/empty.svelte";
+import Profile from "../components/sections/profile.svelte";
 </script>
 
 <main>
-  <div class="selection">
-    <Selection/>
-    <Selection/>
-    <Selection/>
-    <Selection/>
+  <div class="list">
+    <Profile/>
+    <Empty/>
+    <Empty/>
+    <Empty/>
+    <Empty/>
   </div>
 </main>
 
 <style>
-  .selection {
+  main {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh; 
+  }
+
+  .list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100vh;
-    padding-left: 20px;
+    max-width: 10%;
+    margin: 0;
   }
 </style>
 

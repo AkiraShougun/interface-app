@@ -1,0 +1,13 @@
+.selection {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    transition: background-color 0.3s;
+    border-radius: 100%;
+    border: none;
+    position: relative;
+}
+
+.selection:hover {
+    background-color: rgb(200, 230, 240);
+}
