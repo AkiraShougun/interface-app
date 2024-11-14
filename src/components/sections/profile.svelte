@@ -1,12 +1,20 @@
 <script lang='ts'>
-    let showDiv = false;
-    function toggleDiv() {
-        showDiv = !showDiv;
+    import { get } from "svelte/store";
+    import { activeState } from "../../store";
+    let showDiv = $state(false);
+    function clicked(){
+        if (get(activeState) === 'profile'){
+            activeState.set(null);
+            showDiv = false;
+        } else {
+            activeState.set('profile');
+            showDiv = true;
+        }
     }
 
 </script>
 
-<button class="selection" onclick={toggleDiv}>    
+<button class="selection" onclick={clicked} disabled={$activeState && $activeState !== 'profile' ? true : null}>    
     <h1>P</h1>
 </button>
 

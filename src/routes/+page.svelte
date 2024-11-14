@@ -6,10 +6,10 @@ import Profile from "../components/sections/profile.svelte";
 <main>
   <div class="list">
     <Profile/>
-    <Empty/>
-    <Empty/>
-    <Empty/>
-    <Empty/>
+    <Empty text="1"/>
+    <Empty text="2"/>
+    <Empty text="3"/>
+    <Empty text="4"/>
   </div>
 </main>
 
@@ -25,7 +25,8 @@ import Profile from "../components/sections/profile.svelte";
     display: flex;
     flex-direction: column;
     max-width: 10%;
-    margin: 0;
+    margin: 0 auto;
+    transform: translateX(-130%);
   }
 </style>
 
