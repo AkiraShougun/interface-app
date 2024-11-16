@@ -14,7 +14,7 @@
 
 </script>
 
-<button class="selection" onclick={clicked} disabled={$activeState && $activeState !== 'profile' ? true : null}>    
+<button class:active={$activeState == 'profile'} class="selection" onclick={clicked} disabled={$activeState && $activeState !== 'profile' ? true : null}>    
     <h1>P</h1>
 </button>
 
@@ -35,5 +35,6 @@
         width: 200px;
         padding-right: 30px;
         background-color: antiquewhite;
+        
     }
 </style>

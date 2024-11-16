@@ -10,10 +10,14 @@
         }
     }
 </script>
-<button class="selection" onclick={clicked} disabled={$activeState && $activeState !== props.text ? true : null}>    
+<button class:active={$activeState == props.text} class="selection" onclick={clicked} disabled={$activeState && $activeState !== props.text ? true : null}>    
     <h1>{props.text}</h1>
 </button>
 
 <style>
     @import './section.css';
+    .selection.active {
+        background-color: #458DD7;
+}
+
 </style>

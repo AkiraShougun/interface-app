@@ -6,8 +6,15 @@
     border-radius: 100%;
     border: none;
     position: relative;
+    background-color: #070F1C;
+    color:white;
+    border: 2px solid transparent;
+    border-color: #142b50;
 }
 
 .selection:hover {
-    background-color: rgb(200, 230, 240);
+    background-color: #458DD7
+}
+.selection.active{
+    background-color: #458DD7;
 }
