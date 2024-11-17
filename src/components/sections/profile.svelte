@@ -29,7 +29,7 @@
     @import './section.css';
     .profile-content {
         position: absolute;
-        left: 10rem;
+        left: -10rem;
         top: 8rem;
         height: 50vh;
         width: 200px;
