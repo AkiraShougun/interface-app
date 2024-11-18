@@ -19,6 +19,7 @@ import Profile from "../components/sections/profile.svelte";
     justify-content: flex-start; 
     align-items: center; 
     height: 100vh; 
+    color:white;
   }
 
   .list {
